@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Child Safety Standards — KolektifAğ</title>
+<style>
+  :root {
+    --bg: #fafaf7; --surface: #fff; --text: #1a1a1a; --muted: #6b6b6b;
+    --accent: #2d4a3e; --warm: #d97757; --border: #e8e6df; --danger: #dc2626;
+  }
+  * { box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; margin: 0; }
+  .container { max-width: 760px; margin: 0 auto; padding: 40px 24px 80px; }
+  header { border-bottom: 2px solid var(--accent); padding-bottom: 16px; margin-bottom: 32px; }
+  h1 { font-family: Georgia, serif; font-style: italic; font-size: 32px; margin: 0 0 8px; color: var(--accent); letter-spacing: -0.5px; }
+  h1 .dot { color: var(--warm); }
+  .meta { color: var(--muted); font-size: 14px; }
+  h2 { font-family: Georgia, serif; font-size: 22px; margin-top: 36px; margin-bottom: 12px; color: var(--accent); }
+  h3 { font-size: 16px; margin-top: 20px; margin-bottom: 8px; color: var(--text); }
+  p, li { font-size: 15px; }
+  ul, ol { padding-left: 24px; }
+  li { margin-bottom: 6px; }
+  .highlight { background: #fef2f2; border-left: 4px solid var(--danger); padding: 14px 18px; border-radius: 4px; margin: 20px 0; }
+  .highlight strong { color: var(--danger); }
+  .pledge { background: var(--surface); border: 1px solid var(--border); border-left: 4px solid var(--accent); padding: 14px 18px; border-radius: 4px; margin: 20px 0; }
+  .pledge strong { color: var(--accent); }
+  a { color: var(--accent); }
+  table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 14px; }
+  th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--border); }
+  th { background: var(--surface); font-weight: 600; }
+  footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--border); color: var(--muted); font-size: 13px; text-align: center; }
+</style>
+</head>
+<body>
+<p style="text-align:right;font-size:13px;"><a href="child-safety.html">🌐 Türkçe</a></p>
+<div class="container">
+
+<header>
+  <h1>KolektifAğ<span class="dot">.</span> — Child Safety Standards</h1>
+  <div class="meta">
+    <strong>Effective date:</strong> 6 May 2026 &nbsp;·&nbsp;
+    <strong>Last updated:</strong> 6 May 2026
+  </div>
+</header>
+
+<p>KolektifAğ places the utmost importance on protecting children and maintains a zero-tolerance policy against Child Sexual Abuse and Exploitation (CSAE). This page describes our child safety standards, the relevant policies, and our reporting procedures on the platform.</p>
+
+<div class="highlight">
+  <strong>⚠️ Zero Tolerance:</strong> No post, message, or interaction involving the sexual abuse or exploitation of children, child sexual abuse material (CSAM), or any content that implies such material is permitted on KolektifAğ. The moment such content is detected, the account is immediately closed and reported to the competent authorities.
+</div>
+
+<h2>1. Age Limit and Target Audience</h2>
+
+<ul>
+  <li>KolektifAğ <strong>does not provide services to users under the age of 13</strong>.</li>
+  <li>The membership registration form includes a date-of-birth field; if a user is found to be under 13, the account is closed immediately.</li>
+  <li>The application is <strong>not</strong> a platform that targets children or is specifically designed for children.</li>
+  <li>Our target user base is adult community members aged 18 and over. (While it is possible for a member aged 13–17 to join, this is exceptional and remains the responsibility of the inviting member.)</li>
+</ul>
+
+<h2>2. Closed-Circuit Membership — Access Control</h2>
+
+<p>KolektifAğ is <strong>not open to the public</strong>. The membership flow reinforces child safety with an additional layer:</p>
+
+<ul>
+  <li><strong>Invite-only:</strong> New members register through a personalized invitation link sent by existing members. Anonymous/random registration is not possible.</li>
+  <li><strong>Transparent invitation chain:</strong> Each new member appears under the profile of their "referring member." Violations can be traced back to the inviting member.</li>
+  <li><strong>Email verification:</strong> The email address is verified before membership becomes active.</li>
+  <li><strong>Closed content:</strong> All posts and interactions are visible only to members; they are not publicly accessible.</li>
+</ul>
+
+<h2>3. Content Moderation and Reporting</h2>
+
+<h3>3.1 User reporting</h3>
+<p>A "Report" button is available for every post, comment, message, profile, and media item (across 12 different content types). The report categories include "Child abuse" specifically, which is routed to a <strong>high-priority</strong> queue.</p>
+
+<h3>3.2 Administrator review</h3>
+<p>Reports containing a child safety complaint are:</p>
+<ul>
+  <li>Automatically flagged at the highest priority</li>
+  <li>Reviewed by an administrator within 24 hours</li>
+  <li>Immediately hidden in suspicious cases (without waiting for review)</li>
+  <li>If the violation is confirmed, the account is closed + the content is deleted + logs are retained</li>
+</ul>
+
+<h3>3.3 Proactive detection</h3>
+<p>During the demo phase there is no automated content scanning (image hashing, text analysis); however, the following standards are planned for implementation at production scale:</p>
+<ul>
+  <li><strong>PhotoDNA</strong> hash comparison for visual content (against the known CSAM hash database provided by NCMEC)</li>
+  <li>Automated detection of text-based risk signals</li>
+  <li>Suspicious account behavior detection (rapid invitations, abnormal messaging patterns)</li>
+</ul>
+
+<h2>4. Reporting to the Competent Authorities</h2>
+
+<div class="pledge">
+  <strong>Pledge:</strong> Any content or behavior detected relating to the sexual abuse of children is reported without delay to the relevant legal authorities and international reporting centers.
+</div>
+
+<table>
+  <thead>
+    <tr><th>Organization</th><th>Description</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>NCMEC CyberTipline</strong> (US-based, international)</td>
+      <td><a href="https://report.cybertip.org" target="_blank" rel="noopener">report.cybertip.org</a> — Known CSAM hashes and suspicious behavior are reported.</td>
+    </tr>
+    <tr>
+      <td><strong>BTK (Information and Communication Technologies Authority)</strong></td>
+      <td><a href="https://ihbar.btk.gov.tr" target="_blank" rel="noopener">ihbar.btk.gov.tr</a> — The legal reporting authority in Türkiye.</td>
+    </tr>
+    <tr>
+      <td><strong>Children's Rights Association (Çocuk Hakları Derneği)</strong></td>
+      <td>For expert child safety support in Türkiye.</td>
+    </tr>
+    <tr>
+      <td><strong>İHBARWEB</strong> (TR)</td>
+      <td><a href="https://www.ihbarweb.org.tr" target="_blank" rel="noopener">ihbarweb.org.tr</a> — Reporting of criminal content on the internet.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>5. Standards We Adhere To</h2>
+
+<p>KolektifAğ operates in compliance with the following international standards and frameworks:</p>
+
+<ul>
+  <li><strong>WeProtect Global Alliance — Model National Response Framework</strong> (<a href="https://www.weprotect.org" target="_blank" rel="noopener">weprotect.org</a>)</li>
+  <li><strong>Tech Coalition Voluntary Principles</strong> (<a href="https://www.technologycoalition.org" target="_blank" rel="noopener">technologycoalition.org</a>) — industry-wide child protection principles</li>
+  <li><strong>UNICEF Children's Rights and Business Principles</strong></li>
+  <li><strong>UN Convention on the Rights of the Child (CRC)</strong> Articles 19 and 34</li>
+  <li><strong>Türkiye Child Protection Law</strong> (Law No. 5395)</li>
+  <li><strong>KVKK</strong> (Turkish Personal Data Protection Law) — in particular, the special consent and protection rules for processing the data of persons under 18</li>
+</ul>
+
+<h2>6. User Education and Awareness</h2>
+
+<ul>
+  <li>The community rules are presented to members during sign-up</li>
+  <li>The method for submitting a child safety report is always accessible within the application</li>
+  <li>A direct communication channel is available for members who witness suspicious behavior to reach the administrators</li>
+</ul>
+
+<h2>7. Data Retention and Cooperation</h2>
+
+<ul>
+  <li>When a violation is confirmed, the logs required for investigation (login records, IP addresses, copies of messages/content) may be retained for the purpose of cooperating with the competent authorities.</li>
+  <li>This exceptional retention takes place only within the scope of a legal obligation; the other data-deletion rules in our privacy policy remain in effect.</li>
+  <li>We have a procedure in place for responding to lawful requests from law enforcement.</li>
+</ul>
+
+<h2>8. Reporting Suspicious Content — Quick Access</h2>
+
+<p>If you suspect a child safety violation, please use one of the following channels:</p>
+
+<ol>
+  <li><strong>In-app:</strong> Tap the "Report" button next to the relevant post/profile → select the "Child abuse" category.</li>
+  <li><strong>Email:</strong> Send an email with the subject "URGENT Child Safety Report" to <a href="mailto:info@kolektifag.com?subject=ACİL%20Çocuk%20Güvenliği%20Bildirimi">info@kolektifag.com</a>.</li>
+  <li><strong>Anonymous report:</strong> In Türkiye <a href="https://www.ihbarweb.org.tr" target="_blank" rel="noopener">ihbarweb.org.tr</a>, internationally <a href="https://report.cybertip.org" target="_blank" rel="noopener">cybertip.org</a></li>
+</ol>
+
+<p>All urgent reports are responded to <strong>within 24 hours</strong>.</p>
+
+<h2>9. Contact and Responsible Person</h2>
+
+<p>To contact the representative responsible for child safety matters:</p>
+<ul>
+  <li><strong>Email:</strong> <a href="mailto:info@kolektifag.com">info@kolektifag.com</a></li>
+  <li><strong>Subject line:</strong> "Child Safety — [summary]"</li>
+</ul>
+
+<h2>10. Policy Updates</h2>
+
+<p>These standards are reviewed regularly to remain aligned with international best practices. Significant changes are announced to users via in-app notification.</p>
+
+<footer>
+  This policy was published on 6 May 2026.<br>
+  © 2026 KolektifAğ — All rights reserved.<br>
+  <a href="privacy-policy.html">Privacy Policy</a> · <a href="account-deletion.html">Account Deletion</a>
+</footer>
+
+</div>
+</body>
+</html>

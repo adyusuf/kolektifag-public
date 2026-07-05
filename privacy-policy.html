@@ -99,11 +99,13 @@
 <body>
 <div class="container">
 
+<p style="text-align:right;font-size:13px;"><a href="privacy-policy-en.html">🌐 English</a></p>
+
 <header>
   <h1>KolektifAğ<span class="dot">.</span> — Gizlilik Politikası</h1>
   <div class="meta">
     <strong>Yürürlük tarihi:</strong> 6 Mayıs 2026 &nbsp;·&nbsp;
-    <strong>Son güncelleme:</strong> 6 Mayıs 2026
+    <strong>Son güncelleme:</strong> 5 Temmuz 2026
   </div>
 </header>
 
@@ -174,7 +176,6 @@
     <tr><th>Hizmet</th><th>Amaç</th><th>İletilen veri</th></tr>
   </thead>
   <tbody>
-    <tr><td>Amazon Web Services (AWS)</td><td>Sunucu ve veritabanı barındırma</td><td>Tüm veriler (şifreli)</td></tr>
     <tr><td>Google Firebase Cloud Messaging</td><td>Android push bildirimleri</td><td>Cihaz token'ı, bildirim metni</td></tr>
     <tr><td>Apple Push Notification Service</td><td>iOS push bildirimleri</td><td>Cihaz token'ı, bildirim metni</td></tr>
     <tr><td>Sentry</td><td>Hata ve çökme raporları</td><td>Hata izleri, cihaz tipi (kişisel veri içermez)</td></tr>
@@ -204,9 +205,9 @@
 <h2>7. Veri Güvenliği</h2>
 <ul>
   <li>Tüm bağlantılar <strong>HTTPS/TLS</strong> ile şifrelenir.</li>
-  <li>Şifreler <strong>bcrypt/argon2</strong> algoritmalarıyla tek yönlü hash'lenir.</li>
-  <li>Sunucu tarafı veriler şifreli disk üzerinde saklanır.</li>
-  <li>Yetkilendirme <strong>JWT bearer token</strong> ile yapılır; token'lar 15 dakikada bir yenilenir.</li>
+  <li>Şifreler <strong>Argon2id</strong> algoritmasıyla tek yönlü hash'lenir (düz metin tutulmaz).</li>
+  <li>Sunucularımız <strong>kendi altyapımızda, Türkiye'de</strong> barındırılır (üçüncü taraf bulut — AWS/Google Cloud/Azure — kullanılmaz); veritabanı erişimi kısıtlıdır.</li>
+  <li>Yetkilendirme <strong>JWT</strong> ile yapılır; kısa ömürlü erişim token'ı (15 dk) + sunucuda tutulan, iptal edilebilir yenileme token'ı. Sosyal medya OAuth token'ları şifreli saklanır.</li>
   <li>Mobil uygulamada hassas veriler <strong>Secure Storage</strong> (Keychain/Keystore) ile saklanır.</li>
 </ul>
 <p>Buna rağmen internet üzerinden iletilen hiçbir verinin %100 güvenliği garanti edilemez.</p>
@@ -216,12 +217,12 @@
 
 <h2>9. Çerezler ve Yerel Depolama</h2>
 <ul>
-  <li><strong>Web tarafı:</strong> oturum tokeni <code>localStorage</code>'da saklanır. Üçüncü taraf çerez kullanmıyoruz.</li>
+  <li><strong>Web tarafı:</strong> oturum tokeni <code>httpOnly</code> çerezde saklanır (JavaScript erişemez, CSRF korumalı). Üçüncü taraf/izleme çerezi kullanmıyoruz.</li>
   <li><strong>Mobil tarafı:</strong> kimlik doğrulama tokeni cihazın güvenli depolamasında (Secure Storage) saklanır.</li>
 </ul>
 
 <h2>10. Yurtdışı Veri Aktarımı</h2>
-<p>Hizmet sağlayıcılarımızdan bazıları (AWS, Google, Apple, Sentry) yurtdışında bulunmaktadır. KVKK madde 9 kapsamında, üyeliğinizi tamamlayarak bu sınırlı yurtdışı aktarıma açık rıza vermiş olursunuz.</p>
+<p>Ana kullanıcı verileriniz (hesap, profil, içerik ve mesajlar) <strong>Türkiye'deki kendi sunucumuzda</strong> saklanır ve yurtdışına aktarılmaz. Yalnızca push bildirim token'ları (Google/Apple) ve çökme/hata tanılama verileri (Sentry) ilgili servislerin yurtdışı altyapısında işlenir. KVKK madde 9 kapsamında, üyeliğinizi tamamlayarak bu sınırlı yurtdışı işlemeye açık rıza vermiş olursunuz.</p>
 
 <h2>11. Politikadaki Değişiklikler</h2>
 <ul>

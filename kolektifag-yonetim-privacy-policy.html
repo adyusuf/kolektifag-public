@@ -99,11 +99,13 @@
 <body>
 <div class="container">
 
+<p style="text-align:right;font-size:13px;"><a href="kolektifag-yonetim-privacy-policy-en.html">🌐 English</a></p>
+
 <header>
   <h1>KolektifAğ Yönetim<span class="dot">.</span> — Gizlilik Politikası</h1>
   <div class="meta">
     <strong>Yürürlük tarihi:</strong> 3 Temmuz 2026 &nbsp;·&nbsp;
-    <strong>Son güncelleme:</strong> 3 Temmuz 2026
+    <strong>Son güncelleme:</strong> 5 Temmuz 2026
   </div>
 </header>
 
@@ -158,7 +160,6 @@
     <tr><th>Hizmet</th><th>Amaç</th><th>İletilen veri</th></tr>
   </thead>
   <tbody>
-    <tr><td>Sunucu barındırma (KolektifAğ altyapısı)</td><td>Uygulama verilerinin depolanması</td><td>Tüm veriler (şifreli)</td></tr>
     <tr><td>Expo Push Notification Service</td><td>Anlık bildirimler</td><td>Cihaz push token'ı, bildirim metni</td></tr>
   </tbody>
 </table>
@@ -184,7 +185,8 @@
 <h2>8. Veri Güvenliği</h2>
 <ul>
   <li>Tüm bağlantılar <strong>HTTPS/TLS</strong> ile şifrelenir.</li>
-  <li>Yetkilendirme <strong>JWT bearer token</strong> ile yapılır.</li>
+  <li>Sunucularımız <strong>kendi altyapımızda, Türkiye'de</strong> barındırılır (üçüncü taraf bulut — AWS/Google Cloud/Azure — kullanılmaz).</li>
+  <li>Parolalar <strong>Argon2id</strong> ile tek yönlü hash'lenir. Yetkilendirme <strong>JWT</strong> ile yapılır (kısa ömürlü erişim + iptal edilebilir yenileme token'ı).</li>
   <li>Mobil uygulamada kimlik doğrulama token'ı cihazın güvenli depolamasında (Secure Storage) saklanır.</li>
 </ul>
 <p>Buna rağmen internet üzerinden iletilen hiçbir verinin %100 güvenliği garanti edilemez.</p>
